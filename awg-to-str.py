@@ -153,7 +153,6 @@ def build_json(text: str, description: str) -> OrderedDict:
 
     result = OrderedDict()
     result["containers"] = containers
-    # Удалены: killSwitchOption, allowedDnsServers, splitTunnelType, splitTunnelSites
     result["defaultContainer"] = "amnezia-awg"
     result["description"] = description
     result["dns1"] = dns1 or "1.1.1.1"
